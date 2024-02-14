@@ -1,6 +1,51 @@
-# Getting Started with Create React App
+This is a event management application built with React for the frontend and Node.js with MongoDB for the backend. The application is unfinished due to time contraints.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Technologies Used
+React: A JavaScript library for building user interfaces.
+Node.js: A JavaScript runtime environment for executing JavaScript code outside of a web browser.
+Express.js: A web application framework for Node.js used for building RESTful APIs.
+MongoDB: A NoSQL database used for storing event data.
+React Router: A routing library for React applications.
+
+Approach Taken
+Frontend: The frontend of the application is built with React, providing a user-friendly interface for users to view and create events. 
+
+Backend: The backend is built with Node.js and Express.js, providing RESTful API endpoints for fetching and creating events. 
+
+Usage Instructions
+To run the application locally, follow these steps:
+
+Clone the repository to your local machine:
+
+bash
+Copy code
+git clone <repository-url>
+Navigate to the project directory:
+
+bash
+Copy code
+cd client
+npm install
+cd ..
+npm install
+Start the backend server:
+
+bash
+Copy code
+cd client
+npm start
+Open your web browser and navigate to http://localhost:3000 to view the application.
+
+Unsolved Problems
+Display: Getting my events in containers on the page
+
+Database: The server is not yet connected to MongoDB. I created my API - the database orginially written in Express soon to be converted.
+
+Authentication: User authentication and authorization features are not implemented in this version of the application. Adding authentication would enhance security and allow users to manage their own events.
+
+Error handling: Error handling mechanisms for handling invalid input or server errors are minimal in this version and will become more robust. 
+
+Testing: Automated tests for frontend and backend components are not included in this version.
 
 ## Available Scripts
 
