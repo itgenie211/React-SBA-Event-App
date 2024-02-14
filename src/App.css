@@ -1,0 +1,13 @@
+.App {
+  background-color: whitesmoke;
+}
+.App-logo {
+  height: 188px;
+  width: 99.99%;
+  pointer-events: none;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
