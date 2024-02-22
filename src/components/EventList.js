@@ -4,7 +4,7 @@ const EventListContainer = () => {
   const [events, setEvents] = useState([]);
 
   useEffect(() => {
-    fetch("file:///C:/Users/Learner_TZH3Z107/PerScholasWork/324-redux/event-right-app/src/model/database.js")
+    fetch("https://api.seatgeek.com/2/events?client_id=NDAwMTIwODh8MTcwODYyMTE0NC41MTcwOTQ5")
       .then(response => response.json())
       .then(data => setEvents(data))
       .catch(error => console.error('Error fetching events:', error));
