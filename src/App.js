@@ -3,7 +3,7 @@ import Header from './components/Header';
 import Categories from './components/Categories';
 import Footer from './components/Footer';
 import Navigation from './components/Navigation';
-import EventListContainer from './components/EventList';
+import EventList from './components/EventList';
 import './App.css';
 import './Header.css'
 
