@@ -6,7 +6,7 @@ const EventListContainer = () => {
   useEffect(() => {
     fetch("https://api.seatgeek.com/2/events?client_id=NDAwMTIwODh8MTcwODYyMTE0NC41MTcwOTQ5")
       .then(response => response.json())
-      .then(data => setEvents(data))
+      .then(data => setEvents(data.events))
       .catch(error => console.error('Error fetching events:', error));
   }, []);
 
@@ -24,9 +24,9 @@ const EventContainer = ({ event }) => {
   return (
     <div className="event-container">
       <h3>{event.title}</h3>
-      <p>{event.description}</p>
-      <p>Date: {event.date}</p>
-      <p>Location: {event.location}</p>
+      <p>Check out the link: {event.url}</p>
+      <p>Location: {event.venue.address}</p>
+      <p>Date: {event.datetime_utc}</p>
     </div>
   );
 };
